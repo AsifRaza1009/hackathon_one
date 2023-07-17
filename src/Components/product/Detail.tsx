@@ -1,6 +1,6 @@
 "use client";
 
-
+import Link from "next/link";
 import { DineMarketContext } from "@/DinemarketContex";
 import { getUserIdentifier } from "@/lib/cookie";
 import React, { useContext, useState } from "react";
@@ -144,6 +144,9 @@ export const Detail: React.FC<DetProps> = ({
       <span className='font-bold text-lg md:text-2xl md:pl-6 pl-1'>
         = $ {price}.00
       </span>
+      <div className="pt-4">
+      <Link href="/cart" className='px-3 py-3 rounded rounded-lg bg-green-500 text-white'>Order Summery </Link>
+      </div>
       {/* div 1.3 end */}
       <Toaster position='top-center' reverseOrder={false} />
     </div>

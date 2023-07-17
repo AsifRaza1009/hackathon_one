@@ -7,8 +7,8 @@ import { BsCartPlus } from "react-icons/bs";
 import { client } from "@/lib/sanityClient";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import imageUrlBuilder from "@sanity/image-url";
-import { ImageSec } from "@/Components/product/ImageSec";
-import {Detail} from "@/Components/product/Detail";
+import { ImageSec } from "@/components/product/ImageSec";
+import {Detail} from "@/components/product/Detail";
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: SanityImageSource) {

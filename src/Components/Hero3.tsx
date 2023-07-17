@@ -16,7 +16,7 @@ export default function Hero3() {
           Check What We Have
         </h2>
 
-        <div className='flex flex-col md:flex-row  items-center justify-center space-x-8 py-4 md:py-0'>
+        <div className='flex flex-col md:flex-row  items-center justify-center space-x-0 md:space-x-8 space-y-4 md:space-y-0'>
           <div className='hover:scale-110 ease-in duration-300'>
             <Image src={pic2} alt=''></Image>
             <p className='font-bold text-sm md:txt-lg px-4 md:px-0'>
@@ -34,15 +34,15 @@ export default function Hero3() {
               width={360}
               className='bg-[#eae6e3] md:py-4'
             ></Image>
-            <p className='font-bold text-sm md:txt-lg pb-2'>
+            <p className='font-bold text-sm md:txt-lg px-4 md:px-0 pb-2'>
               Cameryn Sash Tie Dress
             </p>
-            <p className='font-bold text-sm md:text-lg pb-2'> $545</p>
+            <p className='font-bold text-sm md:text-lg px-4 md:px-0 pb-2'> $545</p>
           </div>
           <div className='hover:scale-110 ease-in duration-300'>
             <Image src={pic3} alt=''></Image>
-            <p className='font-bold text-sm md:txt-lg'>Flex Sweatshirt</p>
-            <p className='font-bold text-sm md:text-lg'> $175</p>
+            <p className='font-bold text-sm px-4 md:px-0 md:txt-lg'>Flex Sweatshirt</p>
+            <p className='font-bold text-sm md:text-lg px-4 md:px-0'> $175</p>
           </div>
         </div>
 

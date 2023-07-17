@@ -23,7 +23,7 @@ export const Newsletter = () => {
 
 
   return (
-    <div className='pt-6 mx-auto'>
+    <div className='pt-0 md:pt-6 mx-auto'>
       <div className='relative'>
         {/* News Letter Component */}
         <div className='flex flex-col items-center justify-center py-10'>
@@ -50,7 +50,7 @@ export const Newsletter = () => {
               onClick={() => {
                 handleButtonSubmit();
               }}
-              className='inline-block w-auto whitespace-nowrap bg-[#212121] px-5 focus-visible:bg-[#212121]'
+              className='inline-block w-auto whitespace-nowrap text-white bg-[#212121] px-5 focus-visible:bg-[#212121]'
             >
               Get Started
             </button>

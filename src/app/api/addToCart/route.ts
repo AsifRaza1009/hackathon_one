@@ -13,7 +13,7 @@ import { NewCartItem, dine_market_cart } from '@/lib/db/schema';
 export async function POST(request: NextRequest) {
   let body = await request.json();
   const userId = request.headers.get('authorization');
-  console.log(body,userId)
+  
   if (body && userId) {
     const cartItem: NewCartItem = {
       product_name: body.productName,

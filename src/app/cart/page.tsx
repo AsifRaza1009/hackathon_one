@@ -24,6 +24,7 @@ export default function Page() {
   const [price, setPrice] = useState(null);
 
   async function getCartDetail(userId: string) {
+setCartItems([])
     fetch(`${baseUrl}api/cartDetail`, {
       method: "GET",
       headers: {
@@ -58,7 +59,9 @@ export default function Page() {
         if (response.response == "success") {
           dmContext?.decCartItems(quantOriginal);
           setReFetch(!reFetch);
-          toast.success("corder deleted");
+          getCartSummary(userId)
+      
+          toast.success("order deleted");
         } else {
           toast.error("delete failed");
         }
@@ -68,6 +71,7 @@ export default function Page() {
         toast.error("delete failed");
       })
       .finally(() => {
+        getCartDetail(userId)
         setBDisabled(false);
       });
   }
@@ -115,14 +119,14 @@ export default function Page() {
       });
   }
 
-  console.log(qunat,price)
+
 
   useEffect(() => {
     setLoading(true);
     getCartDetail(userId);
     getCartSummary(userId)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [reFetch]);
+  }, []);
 
   return (
     <>

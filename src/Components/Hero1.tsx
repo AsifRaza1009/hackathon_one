@@ -6,6 +6,7 @@ import fe2 from "../../public/Featured2.webp";
 import fe3 from "../../public/Featured3.webp";
 import fe4 from "../../public/Featured4.webp";
 import hero1 from "../../public/header1.webp";
+import Link from "next/link";
 
 export default function Hero1() {
   return (
@@ -13,9 +14,9 @@ export default function Hero1() {
       <div className='lg:py-24 flex justify-center lg:space-x-20 lg:px-20'>
         {/* main dive start */}
 
-        <div className='w-1/3'>
+        <div className=' w-full px-5 lg:px-0 lg:w-1/3'>
           {/* left div start */}
-          <button className='px-5 py-2 bg-blue-100 border rounded-md text-blue-700 font-semibold'>
+          <button className='px-5 py-2 bg-blue-300 border rounded-md text-blue-800 font-semibold'>
             {" "}
             Sale 70%{" "}
           </button>
@@ -23,18 +24,18 @@ export default function Hero1() {
           <h1 className=' text-3xl lg:text-6xl font-bold py-8 text-center lg:text-left'>
             An Industrial Take on Streetwear
           </h1>
-          <p className='text-gray-400  py-8'>
+          <p className='text-gray-400   py-8'>
             Anyone can beat you but no one can beat your outfit as long as you
             wear Dine outfits.
           </p>
 
-          <button className=' text-gray-100 font-semibold inline-flex space-x-3 items-center px-2 py-6 border bg-gray-900 w-fit'>
+          <Link href="/product" className=' text-gray-100 font-semibold inline-flex space-x-3 items-center px-2 py-6 border bg-green-500 w-fit rounded rounded-lg'>
             {" "}
             <BsCartPlus size={18} color='white' />
             <span> Start Shopping </span>
-          </button>
+          </Link>
 
-          <div className='grid grid-cols-2 gap-4 md:gap-0 md:grid-rows-1 justify-center py-8 '>
+          <div className='grid grid-cols-2 gap-4 md:gap-6 md:grid-cols-4 justify-center py-8 '>
             <Image src={fe1} alt='' width={100} height={50}></Image>
             <Image src={fe2} alt='' width={100} height={50}></Image>
             <Image src={fe3} alt='' width={100} height={50}></Image>

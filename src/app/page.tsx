@@ -1,14 +1,9 @@
 
-import Image from "next/image";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
-
-import Hero2 from "@/Components/Hero2";
-import Hero3 from "@/Components/Hero3";
-
-import Hero1 from "@/Components/Hero1";
-import Hero4 from "@/Components/Hero4";
-import { Newsletter } from "../Components/Newsletter";
+import Hero2 from "@/components/Hero2";
+import Hero3 from "@/components/Hero3";
+import Hero1 from "@/components/Hero1";
+import Hero4 from "@/components/Hero4";
+import { Newsletter } from "../components/Newsletter";
 
 
 
